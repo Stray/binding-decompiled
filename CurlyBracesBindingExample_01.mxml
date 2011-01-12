@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mx:Application backgroundColor="#00ffffff" layout="horizontal" viewSourceURL="srcview/index.html" xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script><![CDATA[
+        import flash.utils.*;
+        import mx.binding.*;
+        import mx.containers.*;
+        import mx.controls.*;
+        import mx.core.*;
+        import mx.events.*;
+        import mx.styles.*;
+    ]]></mx:Script>
+
+	<mx:Form>
+		<mx:FormItem label="the source:">
+			<mx:TextInput id="sourceTextInput"/>
+		</mx:FormItem>
+		<mx:FormItem label="the destination:">
+			<mx:TextInput id="destinationTextInput" text="{sourceTextInput.text}"/>
+		</mx:FormItem>
+	</mx:Form>
+
+</mx:Application>
